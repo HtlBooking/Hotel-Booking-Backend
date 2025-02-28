@@ -1,4 +1,4 @@
-package Entity;
+package com.example.hotel.Entity;
 
 public class CustomerDetails {
 }
