@@ -1,8 +1,7 @@
 package com.example.hotel.Controller;
 
-import com.example.hotel.Entity.ReserveRoom;
+import com.example.hotel.Entity.RoomCategory;
 import com.example.hotel.Services.ReserveRoomService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @CrossOrigin(origins = "*",maxAge = 3600)
@@ -18,7 +17,7 @@ public class ReserveRoomCon {
     }
 
     @PostMapping("/addRoomReservetion")
-    public ReserveRoom addReserveRoom(@RequestBody ReserveRoom reserveRoom){
+    public RoomCategory addReserveRoom(@RequestBody RoomCategory reserveRoom){
         return reserveRoomService.addReservation(reserveRoom);
     }
 }

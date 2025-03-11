@@ -1,8 +1,7 @@
 package com.example.hotel.Services;
 
-import com.example.hotel.Entity.ReserveRoom;
+import com.example.hotel.Entity.RoomCategory;
 import com.example.hotel.Repository.ReserveRoomRepo;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -14,7 +13,7 @@ public class ReserveRoomService {
         this.reserveRoomRepo = reserveRoomRepo;
     }
 
-    public ReserveRoom addReservation(ReserveRoom reserveRoom){
+    public RoomCategory addReservation(RoomCategory reserveRoom){
         return reserveRoomRepo.save(reserveRoom);
     }
 

@@ -1,8 +1,8 @@
 package com.example.hotel.Repository;
 
-import com.example.hotel.Entity.ReserveRoom;
+import com.example.hotel.Entity.RoomCategory;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface ReserveRoomRepo extends JpaRepository<ReserveRoom, String> {
+public interface ReserveRoomRepo extends JpaRepository<RoomCategory, String> {
 
 }
